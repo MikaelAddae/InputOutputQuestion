@@ -1,0 +1,6 @@
+<div *ngFor="let p of pokemon">
+    <app-pokemon-details [pokemon]="p"></app-pokemon-details>
+
+
+    <app-add-new-pokemon (changed)="addPokemon($event)"></app-add-new-pokemon>
+</div>
